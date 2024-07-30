@@ -7,7 +7,7 @@ import '../styles/SignIn.css';
 const SignIn = ({ setUser }) => {
   const [formData, setFormData] = useState({ username: '', password: '', });
   const navigate = useNavigate();
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
