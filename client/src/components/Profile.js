@@ -13,7 +13,7 @@ const Profile = () => {
   const [newProfilePic, setNewProfilePic] = useState(null);
   const [isEditable, setIsEditable] = useState(false);
   const navigate = useNavigate();
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   useEffect(() => {
     const fetchUser = async () => {
