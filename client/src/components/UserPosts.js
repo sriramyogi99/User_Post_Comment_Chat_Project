@@ -11,7 +11,7 @@ const UserPosts = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   useEffect(() => {
     const fetchUserAndPosts = async () => {
