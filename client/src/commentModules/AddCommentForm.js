@@ -4,7 +4,7 @@ import '../styles/Comment.css';
 
 const AddCommentForm = ({ postId, userId, parentId, commentId, commentDescription, onCommentAdded, value, depth }) => {
   const [comment, setComment] = useState(commentDescription || "");
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   useEffect(() => {
     setComment(commentDescription || "");
