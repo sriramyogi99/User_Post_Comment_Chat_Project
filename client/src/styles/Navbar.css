@@ -1,0 +1,71 @@
+/* Container for the entire navigation bar */
+.nav-bar-container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #444;
+}
+
+/* Container for left-side navigation items */
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+/* Container for right-side navigation items */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navigation links */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Profile image link */
+.image-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Profile picture styles */
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 8px;
+}
+
+/* Profile link styles */
+.profile-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Logout button styles */
+.logout-button {
+  background-color: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}

@@ -1,0 +1,78 @@
+/* src/styles/NewPost.css */
+
+.newpost-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .to-home {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .to-home h1 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .to-home a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .form-container form div {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .form-container form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-container form input,
+  .form-container form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .form-container form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .form-container button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  

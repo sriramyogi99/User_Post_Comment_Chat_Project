@@ -1,0 +1,99 @@
+/* src/styles/HomePage.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  .home-container h1 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-container button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .home-container button:hover {
+    background-color: #0056b3;
+  }
+
+  .posts-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .post-container {
+    flex: 1 1 calc(33.333% - 40px); /* 3 posts per row with spacing */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    max-width: 30%;
+  }
+  
+  .post-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .user-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .post-user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .new-post-button{
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .new-post-button button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
