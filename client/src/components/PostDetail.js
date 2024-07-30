@@ -16,7 +16,7 @@ const PostDetail = () => {
   const [postDescription, setPostDescription] = useState('');
   const [postImage, setPostImage] = useState(null);
   const navigate = useNavigate();
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   //
   useEffect(() => {
