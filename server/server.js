@@ -19,7 +19,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require('socket.io')(8080, {
   cors: {
-      origin: 'http://localhost:3000',
+      origin: 'https://user-post-comment-chat-project-frontend.onrender.com',
   }
 });
 //
