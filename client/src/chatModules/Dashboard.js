@@ -15,7 +15,7 @@ const Dashboard = () => {
   const [socket, setSocket] = useState(null);
   const messageRef = useRef(null);
   const navigate = useNavigate();
-  const server_url = 'http://localhost:8000';
+  const server_url = 'https://user-post-comment-chat-project.onrender.com';
 
   useEffect(() => {
     setSocket(io('http://localhost:8080'));
