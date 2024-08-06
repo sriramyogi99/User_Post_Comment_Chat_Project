@@ -7,7 +7,7 @@ import '../styles/Navbar.css';
 const Navbar = () => {
   const user = JSON.parse(localStorage.getItem('user:data'));
   const navigate = useNavigate();
-  const server_url = "https://user-post-comment-chat-project.onrender.com";
+  const server_url = "https://user-post-comment-chat-project-backend.onrender.com";
 
   const handleLogout = async () => {
     try {
