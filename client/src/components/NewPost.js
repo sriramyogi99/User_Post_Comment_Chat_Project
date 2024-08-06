@@ -11,7 +11,7 @@ const NewPost = () => {
     postDescription: '',
   });
   const navigate = useNavigate();
-  const server_url = "https://user-post-comment-chat-project.onrender.com";
+  const server_url = "https://user-post-comment-chat-project-backend.onrender.com";
 
   useEffect(() => {
     const fetchUser = async () => {
