@@ -7,7 +7,7 @@ import '../styles/ForgotPassword.css';
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
   const navigate = useNavigate();
-  const server_url = "https://user-post-comment-chat-project.onrender.com";
+  const server_url = "https://user-post-comment-chat-project-backend.onrender.com";
 
   const handleChange = (e) => {
     setEmail(e.target.value);
