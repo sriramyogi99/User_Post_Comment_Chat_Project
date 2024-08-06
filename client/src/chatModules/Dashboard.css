@@ -190,13 +190,14 @@
   }
   
   .input-field {
-    width: 75%;
+    width: 95%;
     padding: 10px;
-    border: 0;
+    border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    background-color: var(--light-color);
+    background-color: var(--light-color, #f9f9f9);
     outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   
   .send-icon,
