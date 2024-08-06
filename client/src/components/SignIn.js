@@ -7,6 +7,8 @@ import '../styles/SignIn.css';
 const SignIn = ({ setUser }) => {
   const [formData, setFormData] = useState({ username: '', password: '', });
   const navigate = useNavigate();
+  const [loginError, setLoginError] = useState(false);
+
   const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   const handleChange = (e) => {
@@ -24,6 +26,7 @@ const SignIn = ({ setUser }) => {
       setUser(user);
       navigate('/');
     } catch (error) {
+      setLoginError(true);
       if (error.response && error.response.data && error.response.data.message) {
         alert(error.response.data.message); // Show alert with the server-side error message
       } else {
@@ -49,6 +52,11 @@ const SignIn = ({ setUser }) => {
                     <input type="password" name="password" value={formData.password} onChange={handleChange} required />
                 </div>
                 <button type="submit">Sign In</button>
+                {loginError && (
+                  <div className="error-message">
+                    <p>Wrong password! <Link to='/forgot-password'>Forgot Password?</Link></p>
+                  </div>
+                )}
             </form>
             <p>Don't have an account? <Link to='/signup'>Sign Up here</Link> </p>
         </div>
