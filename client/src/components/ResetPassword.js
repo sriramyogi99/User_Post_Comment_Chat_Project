@@ -8,7 +8,7 @@ const ResetPassword = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const { id, token } = useParams();
-  const server_url = "http://localhost:8000";
+  const server_url = "https://user-post-comment-chat-project.onrender.com";
 
   const handleChange = (e) => {
     setPassword(e.target.value);
