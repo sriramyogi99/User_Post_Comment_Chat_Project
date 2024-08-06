@@ -11,7 +11,7 @@ const SignUp = () => {
   });
   const [profilePic, setProfilePic] = useState(null);
   const navigate = useNavigate();
-  const server_url = "https://user-post-comment-chat-project.onrender.com";
+  const server_url = "https://user-post-comment-chat-project-backend.onrender.com";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
