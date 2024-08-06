@@ -9,6 +9,8 @@ import NewPost from './components/NewPost';
 import PostDetail from './components/PostDetail';
 import UserPosts from './components/UserPosts';
 import StartPage from './components/StartPage';
+import ForgotPassword from './components/ForgotPassword';
+import ResetPassword from './components/ResetPassword';
 //
 import Dashboard from './chatModules/Dashboard';
 
@@ -48,6 +50,8 @@ const App = () => {
         <Route path="/post/:postId" element={<ProtectedRoute auth={true}><PostDetail /></ProtectedRoute>} />
         <Route path="/:userId/posts" element={<ProtectedRoute auth={true}><UserPosts /></ProtectedRoute>} />
         <Route path="/chats" element={<ProtectedRoute auth={true}><Dashboard /></ProtectedRoute>} />
+        <Route path="/forgot-password" element={<ProtectedRoute ><ForgotPassword /></ProtectedRoute>} />
+        <Route path="/reset-password/:id/:token" element={<ProtectedRoute ><ResetPassword /></ProtectedRoute>} />
       </Routes>
     </Router>
   );
