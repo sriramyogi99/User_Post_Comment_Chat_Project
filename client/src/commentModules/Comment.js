@@ -7,7 +7,7 @@ const Comment = ({ postId, userId }) => {
   const [comments, setComments] = useState([]);
   const [replyingTo, setReplyingTo] = useState(null);
   const [editing, setEditing] = useState(null);
-  const server_url = "https://user-post-comment-chat-project.onrender.com";
+  const server_url = "https://user-post-comment-chat-project-backend.onrender.com";
 
   useEffect(() => {
     if (postId) {
